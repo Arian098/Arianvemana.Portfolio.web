@@ -16,7 +16,7 @@
     <nav class="navbar navbar-expand-lg navbar-light shad fixed-top" 
     style="background-color: #FFF633;">
         <div class="container">
-          <a class="navbar-brand" href="#">Arian Vemana Portfolio</a>
+          <a class="navbar-brand" href="#">Welcome to my portfolio website! </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -58,9 +58,14 @@
             <h2>About Me</h2>
           </div>
         </div>
-        <div class="row justify-content-around fs-4 text-center">
-          <div class="col">
-            <p> Hello, my name is Arian Vemana Putra Kaban and I am a Cybersecurity Engineering student in Computer Science. I have 3 years of experience in the field of computer science and have had the opportunity to work on various interesting projects. I always strive to expand my knowledge and skills in this field. In my portfolio, I showcase some of my previous work. Thank you for visiting my website!</p>
+        <div class="row">
+          <div class="col-md-9">
+            <div class="row justify-content-around fs-4 text-start">
+              <p>Hello, my name is Arian Vemana Putra Kaban and I am a Cybersecurity Engineering student in Computer Science. I have 3 years of experience in the field of computer science and have had the opportunity to work on various interesting projects. I always strive to expand my knowledge and skills in this field. In my portfolio, I showcase some of my previous work. Thank you for visiting my website!</p> 
+            </div>
+          </div>
+          <div class="col-md-3">
+            <img src="img/Arian2.jpg" alt="Halaman Cover" width="200" class="rounded-circle"/>
           </div>
         </div>
       </div>
@@ -132,15 +137,18 @@
             <form name="Contact-Web-Portofolio">
               <div class="mb-3">
                 <label for="Nama" class="form-label">Your full name</label>
-                <input type="text" class="form-control" id="Nama" aria-describedby="Name" name="nama">
+                <input type="text" class="form-control" id="Nama" aria-describedby="Name" name="nama" 
+                required oninvalid="this.setCustomValidity('Please fill in your name')" oninput="setCustomValidity('')">
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Your email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" name="email">
+                <input type="email" class="form-control" id="email" aria-describedby="email" name="email"
+                required oninvalid="this.setCustomValidity('Please fill in your email')" oninput="setCustomValidity('')">
               </div>
               <div class="mb-3">
                 <label for="pesan" class="form-label">Your message</label>
-                <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+                <textarea class="form-control" id="pesan" rows="3" name="pesan"
+                required oninvalid="this.setCustomValidity('Please fill in your message')" oninput="setCustomValidity('')"></textarea>
               </div>
               <button type="submit" class="btn btn-success btn-kirim">Send</button>
               
