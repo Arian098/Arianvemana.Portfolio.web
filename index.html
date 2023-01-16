@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Web | Arian Vemana</title> 
+    <title>Arian Vemana | Portfolio</title> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     
     <!-- Aos -->
@@ -19,7 +19,7 @@
     <nav class="navbar navbar-expand-lg navbar-light shad fixed-top" 
     style="background-color: #FFF633;">
         <div class="container">
-          <a class="navbar-brand" href="#">Welcome to my portfolio website </a>
+          <a class="navbar-brand" href="#">Arian Vemana Putra </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -48,8 +48,21 @@
       <img src="img/Arian.jpg" alt="Halaman Cover" width="180" 
       class="rounded-circle"/>
         <h1 class="display-6">Soar to new heights, stay high and fly high.</h1>
-        <p class="lead"> I am Cybersecurity engineering student </p>
+        <p class="lead">
+          <span id="iam" data-aos="fade-right" data-aos-duration="1000">I am</span> 
+          <span id="name" data-aos="fade-up" data-aos-duration="1000">Arian Vemana Putra</span>
+        </p>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffff" fill-opacity="1" d="M0,128L40,128C80,128,160,128,240,154.7C320,181,400,235,480,266.7C560,299,640,309,720,282.7C800,256,880,192,960,176C1040,160,1120,192,1200,202.7C1280,213,1360,203,1400,197.3L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+        <script>
+          setInterval(function(){
+            var name = document.getElementById("name").innerHTML;
+            if (name === "Arian Vemana Putra") {
+                document.getElementById("name").innerHTML = "Cybersecurity engineering student";
+            } else {
+                document.getElementById("name").innerHTML = "Arian Vemana Putra";
+            }
+          }, 2000);
+        </script>
         </section>
     <!-- End Jumbotron -->
 
